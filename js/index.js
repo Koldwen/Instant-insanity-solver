@@ -72,7 +72,7 @@ async function initialSetup(){
         ['yellow', 'red', 'green', 'green', 'blue', 'red'],
     ];
 
-    injectHTML('../html/cube-input.html', 'cube1', 'cube2', 'cube3', 'cube4').then(() => {
+    injectHTML('html/cube-input.html', 'cube1', 'cube2', 'cube3', 'cube4').then(() => {
         for (let i = 1; i < 5; i++) {
             configureCubeInput(document.getElementById('cube'+i.toString()), colors[i - 1]);
         }
